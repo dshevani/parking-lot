@@ -2,6 +2,8 @@ package com.jek.go.common;
 
 import java.util.Map;
 
+/** Base class for all Resource Manager **/
+
 public abstract class AbstractResourceManager<Resource, Tenant> {
 	
 	protected Map<Resource, Tenant> resourceTenantMap;

@@ -31,7 +31,7 @@ public class ParkingSlotManager extends AbstractResourceManager<ParkingSlot, ITe
 	public boolean bookResource(ParkingSlot resource, ITenant tenant) {
 		if (resource != null && resourceTenantMap.get(resource) instanceof NoTenant) {
 			resourceTenantMap.put(resource, tenant);
-			System.out.println("Allocated slot number: " + resource.getId() + " to " + tenant  + "\n");
+			System.out.println("Allocated slot number: " + resource.getId() + "\n");
 			return true;
 		}
 		System.out.println("Sorry, parking lot is full\n");
